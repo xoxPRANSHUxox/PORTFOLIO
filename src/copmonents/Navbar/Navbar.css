@@ -1,0 +1,70 @@
+nav > .logo {
+  font-size: 2rem;
+  object-fit: cover;
+}
+.navbar {
+  position: fixed;
+  margin: 0 auto;
+  padding: 1rem;
+  z-index: 1;
+}
+
+.desktopMenuListItem {
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.desktopMenuListItem:hover {
+  color: yellow;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #ffff00;
+}
+
+.desktopMenuBtn {
+  background: white;
+  cursor: pointer;
+  color: black;
+  border: none;
+  font-weight: bolder;
+  padding: 1rem;
+  border-radius: 2rem;
+  text-wrap: nowrap;
+}
+
+.desktopMenuBtn:hover {
+  background: yellow;
+}
+
+.desktopTime{
+    display: none;
+}
+
+.menuDisable{display: none;}
+
+@media screen and (max-width: 500px) {
+  .desktopMenuListItem {
+    display: none;
+  }
+  .navbar {
+    width: 100vw;
+  }
+  .hamBurger {
+    display: block;
+  }
+  .desktopMenuBtn {
+    display: none;
+  }
+  .desktopTime{display: block;}
+  .menu {
+    background-color: black;
+    opacity: 0.8;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    margin-top: 5rem;
+    font-size: 3rem;
+    z-index: 1;
+    padding-top:3rem;
+  }
+}

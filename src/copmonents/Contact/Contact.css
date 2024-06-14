@@ -1,0 +1,15 @@
+.Contact{
+    width: auto;
+}
+
+.btnGrp{align-items: center; justify-content: center;}
+
+div button{
+    width: min-content;
+}
+
+@media screen and (max-width:525px) {
+    .Contact{width:auto; display:flex; align-items: center;flex-direction: column;}
+    .btnGrp{width: auto; }
+    .twoButton{display: flex; flex-direction: column; align-items: center;}
+  }
